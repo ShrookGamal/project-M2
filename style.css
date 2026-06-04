@@ -1049,3 +1049,44 @@ body {
     border-right: 4px solid var(--gold);
     background: rgba(212, 175, 55, 0.05);
 }
+/* --- ضبط الريسبونسيف - إخفاء الناف بار في الموبايل --- */
+
+@media (max-width: 992px) {
+    /* 1. إخفاء روابط الناف بار تماماً */
+    .nav-links {
+        display: none !important; 
+    }
+
+    /* 2. إخفاء زر الاتصال من الهيدر العلوي لعدم الزحمة */
+    .nav-btns .call-action-btn {
+        display: none !important;
+    }
+
+    /* 3. إظهار زر البرجر منيو (السايد منيو) فقط */
+    .burger-menu {
+        display: flex !important; /* تأكدي أن الزر يظهر */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 4. ضبط الهيدر ليكون نظيفاً */
+    .nav-wrapper {
+        justify-content: space-between; /* اللوجو يمين والمنيو شمال */
+    }
+
+    /* 5. تصغير حجم اللوجو قليلاً ليناسب الموبايل */
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
+/* تأكيد إضافي للموبايلات الصغيرة جداً */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 0;
+    }
+    .logo span {
+        font-size: 1.2rem;
+    }
+}
