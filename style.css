@@ -1,4 +1,3 @@
-/* --- Variables & Setup --- */
 :root {
     --bg-dark: #0f172a;
     --gold: #d4af37;
@@ -28,8 +27,6 @@ body {
     margin: 0 auto;
     padding: 0 25px;
 }
-
-/* --- Navigation Style --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -103,8 +100,6 @@ body {
     background: var(--white);
     transform: translateY(-3px);
 }
-
-/* --- Hero Section (Stacked Design) --- */
 .hero {
     height: 100vh;
     display: flex;
@@ -156,7 +151,7 @@ body {
 
 .hero-actions {
     display: flex;
-    flex-direction: column; /* أزرار تحت بعضها */
+    flex-direction: column; 
     gap: 15px;
     width: 100%;
     max-width: 300px;
@@ -184,8 +179,6 @@ body {
 
 .btn-main:hover { transform: scale(1.05); background: var(--white); }
 .btn-outline:hover { background: var(--white); color: var(--bg-dark); }
-
-/* --- Side Drawer (Mobile) --- */
 .burger-menu {
     display: none;
     background: none;
@@ -238,8 +231,6 @@ body {
     background: none;
     border: none;
 }
-
-/* --- Animations --- */
 @keyframes zoomAnimation {
     from { transform: scale(1); }
     to { transform: scale(1.3); }
@@ -262,8 +253,6 @@ body {
 @keyframes revealEffect {
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* --- Responsive Layout --- */
 @media (max-width: 992px) {
     .nav-links, .call-action-btn { display: none; }
     .burger-menu { display: block; }
@@ -275,10 +264,9 @@ body {
     .hero p { font-size: 1rem; }
     .hero-actions { max-width: 85%; }
 }
-/* --- سكشن من نحن --- */
 .about {
     padding: 120px 0;
-    background: #0b1120; /* أغمق قليلاً من الهيرو ليعطي تباين */
+    background: #0b1120; 
     overflow: hidden;
 }
 
@@ -288,8 +276,6 @@ body {
     gap: 80px;
     align-items: center;
 }
-
-/* تنسيق الصورة */
 .about-img-box {
     position: relative;
     z-index: 5;
@@ -327,11 +313,8 @@ body {
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
     animation: floatBadge 4s infinite ease-in-out;
 }
-
 .exp-badge .num { font-size: 2.5rem; font-weight: 900; }
 .exp-badge .txt { font-size: 0.9rem; font-weight: 700; line-height: 1.2; }
-
-/* تنسيق النصوص */
 .section-title .upper {
     color: var(--gold);
     text-transform: uppercase;
@@ -362,8 +345,6 @@ body {
     color: var(--text-dim);
     margin-bottom: 40px;
 }
-
-/* بطاقات المميزات */
 .about-features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -401,8 +382,6 @@ body {
     transform: translateY(-10px);
     border-color: var(--gold);
 }
-
-/* زر المزيد */
 .btn-more {
     color: var(--gold);
     text-decoration: none;
@@ -415,20 +394,13 @@ body {
 }
 
 .btn-more:hover { gap: 20px; color: var(--white); }
-
-/* أنميشن إضافي */
 @keyframes floatBadge {
     0%, 100% { transform: translateY(0) translateX(0); }
     50% { transform: translateY(-15px) translateX(5px); }
 }
-
-/* أنميشن الظهور عند السكرول */
 .reveal-left { opacity: 0; transform: translateX(-100px); transition: 1s ease-out; }
 .reveal-right { opacity: 0; transform: translateX(100px); transition: 1s ease-out; }
-
 .reveal-active { opacity: 1; transform: translateX(0); }
-
-/* ريسبونسيف الموبايل */
 @media (max-width: 992px) {
     .about-grid { grid-template-columns: 1fr; gap: 50px; text-align: center; }
     .section-title .line { margin: 0 auto 30px; }
@@ -436,7 +408,6 @@ body {
     .about-features { grid-template-columns: 1fr; }
     .btn-more { justify-content: center; }
 }
-/* --- سكشن الخدمات --- */
 .services {
     padding: 150px 0;
     background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
@@ -475,8 +446,6 @@ body {
     color: var(--text-dim);
     font-size: 1.2rem;
 }
-
-/* شبكة الخدمات */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -485,7 +454,7 @@ body {
 
 .service-card {
     position: relative;
-    padding: 2px; /* للفريم المضيء */
+    padding: 2px; 
     border-radius: 25px;
     background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent);
     transition: var(--transition-smooth);
@@ -551,8 +520,6 @@ body {
     border-radius: 5px;
     color: var(--gold);
 }
-
-/* Hover Effects */
 .service-card:hover {
     transform: translateY(-15px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
@@ -593,13 +560,9 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-/* تحسينات الظهور */
 .reveal-up { opacity: 0; transform: translateY(50px); transition: 0.8s ease; }
 .reveal-down { opacity: 0; transform: translateY(-50px); transition: 0.8s ease; }
 .reveal-active { opacity: 1; transform: translateY(0); }
-
-/* الموبايل */
 @media (max-width: 1024px) {
     .services-grid { grid-template-columns: 1fr 1fr; }
     .services-header h2 { font-size: 2.5rem; }
@@ -609,7 +572,6 @@ body {
     .services-grid { grid-template-columns: 1fr; }
     .services { padding: 80px 0; }
 }
-/* --- سكشن المعرض الجديد --- */
 .gallery-section {
     padding: 120px 0;
     background: #0b1120;
@@ -619,19 +581,17 @@ body {
 
 .slider-wrapper {
     position: relative;
-    padding: 0 60px; /* مسافة للأزرار على الجنبين */
+    padding: 0 60px; 
     margin-top: 50px;
 }
 
 .myGallerySwiper {
     width: 100%;
-    padding: 40px 0 60px; /* مساحة للـ Pagination بالأسفل */
+    padding: 40px 0 60px; 
 }
-
-/* تنسيق الكارد ليناسب الصور الطولية */
 .photo-card {
     width: 100%;
-    height: 600px; /* ارتفاع كبير لصور الواتساب الطويلة */
+    height: 600px; 
     border-radius: 25px;
     overflow: hidden;
     border: 1px solid rgba(212, 175, 55, 0.2);
@@ -643,7 +603,7 @@ body {
 .photo-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* لضمان امتلاء الكارد بشكل احترافي */
+    object-fit: cover; 
     transition: 0.8s ease;
 }
 
@@ -662,8 +622,6 @@ body {
 .photo-card:hover img {
     transform: scale(1.1);
 }
-
-/* أزرار التحكم الجانبية */
 .nav-button {
     position: absolute;
     top: 50%;
@@ -690,8 +648,6 @@ body {
 
 .prev-btn { right: 0; }
 .next-btn { left: 0; }
-
-/* نقاط التنقل بالأسفل */
 .swiper-pagination-bullet {
     background: #475569 !important;
     width: 12px;
@@ -704,8 +660,6 @@ body {
     width: 30px;
     border-radius: 10px;
 }
-
-/* ريسبونسيف الموبايل */
 @media (max-width: 992px) {
     .photo-card { height: 450px; }
     .slider-wrapper { padding: 0 40px; }
@@ -715,12 +669,11 @@ body {
 @media (max-width: 480px) {
     .photo-card { height: 380px; }
     .slider-wrapper { padding: 0 5px; }
-    .nav-button { display: none; } /* إخفاء الأزرار في الموبايل الصغير جداً والاكتفاء باللمس */
+    .nav-button { display: none; } 
 }
-/* --- سكشن لماذا نحن (الألوان الفاتحة) --- */
 .why-us-light {
     padding: 120px 0;
-    background: #f8fafc; /* لون فاتح جداً وعصري */
+    background: #f8fafc; 
     position: relative;
     overflow: hidden;
 }
@@ -752,8 +705,6 @@ body {
 .gold-text { color: var(--gold); }
 
 .desc-dark { color: #64748b; font-size: 1.1rem; }
-
-/* شبكة المميزات */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -812,8 +763,6 @@ body {
     font-size: 0.95rem;
     line-height: 1.7;
 }
-
-/* Hover Effects */
 .feature-item:hover {
     transform: translateY(-15px);
     background: #ffffff;
@@ -831,8 +780,6 @@ body {
     color: rgba(212, 175, 55, 0.1);
     transform: scale(1.2);
 }
-
-/* عناصر الخلفية المتحركة */
 .floating-blobs .blob {
     position: absolute;
     width: 400px;
@@ -850,8 +797,6 @@ body {
     from { transform: translate(0, 0); }
     to { transform: translate(50px, 50px); }
 }
-
-/* ريسبونسيف الموبايل */
 @media (max-width: 768px) {
     .title-dark { font-size: 2rem; }
     .features-grid { grid-template-columns: 1fr; }
@@ -863,7 +808,6 @@ body {
     z-index: 5;
 }
 }
-/* --- سكشن تواصل معنا --- */
 .contact-section { padding: 100px 0; background: #c9c8c8; }
 
 .contact-cards {
@@ -878,7 +822,7 @@ body {
     padding: 40px;
     border-radius: 30px;
     text-align: center;
-    text-decoration: none; /* إزالة الخط تحت الرابط */
+    text-decoration: none; 
     color: inherit;
     transition: var(--transition-smooth);
     border: 1px solid #f1f5f9;
@@ -916,8 +860,6 @@ body {
 
 .contact-card:hover { transform: translateY(-15px); border-color: var(--gold); }
 .contact-card:hover .c-btn { background: var(--gold); color: #fff; border-color: var(--gold); }
-
-/* --- الفوتر --- */
 .main-footer {
     background: #0f172a;
     color: #f8fafc;
@@ -952,11 +894,8 @@ body {
     font-size: 0.9rem;
     color: #64748b;
 }
-
 .gmt-credit { margin-top: 10px; font-weight: 700; }
 .gmt-credit a { color: var(--gold); text-decoration: none; }
-
-/* --- الأزرار العائمة --- */
 .floating-actions {
     position: fixed;
     bottom: 30px;
@@ -992,8 +931,6 @@ body {
     70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
-
-/* ريسبونسيف الموبايل */
 @media (max-width: 992px) {
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
@@ -1003,13 +940,12 @@ body {
     .footer-col h4::after { right: 50%; transform: translateX(50%); }
     .f-contact-info li { justify-content: center; }
     .floating-actions { bottom: 20px; left: 20px; }
-    .float-btn span { display: none; } /* إخفاء النص في الموبايل والاكتفاء بالأيقونة */
+    .float-btn span { display: none; } 
     .float-btn { width: 60px; height: 60px; padding: 0; justify-content: center; }
 }
-/* --- ستايل الروابط والـ Active المطور --- */
 .nav-links {
     display: flex;
-    gap: 15px; /* تقليل الفجوة قليلاً لتناسب الستايل الجديد */
+    gap: 15px; 
     align-items: center;
 }
 
@@ -1019,69 +955,50 @@ body {
     font-weight: 600;
     font-size: 0.95rem;
     padding: 8px 18px;
-    border-radius: 50px; /* شكل كبسولة */
-    border: 1px solid transparent; /* بوردر شفاف في الحالة العادية */
+    border-radius: 50px; 
+    border: 1px solid transparent;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
-
-/* ستايل السكشن النشط (Active) */
 .nav-links a.active {
     color: var(--bg-dark) !important;
     background: var(--gold);
     border-color: var(--gold-bright);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-    transform: translateY(-2px) scale(1.05); /* حركة رفعة بسيطة */
+    transform: translateY(-2px) scale(1.05); 
     font-weight: 800;
 }
-
-/* انميشن عند المرور بالماوس (Hover) لغير النشط */
 .nav-links a:not(.active):hover {
     color: var(--gold);
     border-color: rgba(212, 175, 55, 0.3);
     background: rgba(212, 175, 55, 0.05);
 }
-
-/* القائمة الجانبية في الموبايل - ستايل الـ Active */
 .drawer-content a.active {
     color: var(--gold);
     padding-right: 20px;
     border-right: 4px solid var(--gold);
     background: rgba(212, 175, 55, 0.05);
 }
-/* --- ضبط الريسبونسيف - إخفاء الناف بار في الموبايل --- */
-
 @media (max-width: 992px) {
-    /* 1. إخفاء روابط الناف بار تماماً */
     .nav-links {
         display: none !important; 
     }
-
-    /* 2. إخفاء زر الاتصال من الهيدر العلوي لعدم الزحمة */
     .nav-btns .call-action-btn {
         display: none !important;
     }
-
-    /* 3. إظهار زر البرجر منيو (السايد منيو) فقط */
     .burger-menu {
-        display: flex !important; /* تأكدي أن الزر يظهر */
+        display: flex !important; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    /* 4. ضبط الهيدر ليكون نظيفاً */
     .nav-wrapper {
-        justify-content: space-between; /* اللوجو يمين والمنيو شمال */
+        justify-content: space-between; 
     }
-
-    /* 5. تصغير حجم اللوجو قليلاً ليناسب الموبايل */
     .logo {
         font-size: 1.4rem;
     }
 }
-
-/* تأكيد إضافي للموبايلات الصغيرة جداً */
 @media (max-width: 480px) {
     .navbar {
         padding: 10px 0;

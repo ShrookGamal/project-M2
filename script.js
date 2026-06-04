@@ -3,8 +3,6 @@ const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 const sideDrawer = document.getElementById('sideDrawer');
 const overlay = document.getElementById('menuOverlay');
-
-// تغيير شكل الناف بار عند السكرول
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('active');
@@ -12,16 +10,11 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('active');
     }
 });
-
-// فتح وإغلاق القائمة الجانبية
 openMenu.onclick = () => sideDrawer.classList.add('open');
 closeMenu.onclick = () => sideDrawer.classList.remove('open');
-
-// إغلاق عند الضغط على الروابط
 document.querySelectorAll('.drawer-content a').forEach(link => {
     link.onclick = () => sideDrawer.classList.remove('open');
 });
-// أنميشن الظهور عند السكرول
 function reveal() {
     const reveals = document.querySelectorAll(".reveal-left, .reveal-right");
     
@@ -37,8 +30,6 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
-
-// لتفعيلها فور التحميل إذا كان السكشن ظاهراً
 reveal();
 function reveal() {
     const reveals = document.querySelectorAll(".reveal-left, .reveal-right, .reveal-up, .reveal-down");
@@ -53,9 +44,8 @@ function reveal() {
         }
     });
 }
-// تهيئة سلايدر المعرض المطور
 var gallerySwiper = new Swiper(".myGallerySwiper", {
-    slidesPerView: 1, // عرض صورة واحدة في الموبايل
+    slidesPerView: 1, 
     spaceBetween: 20,
     centeredSlides: true,
     loop: true,
@@ -64,9 +54,8 @@ var gallerySwiper = new Swiper(".myGallerySwiper", {
         disableOnInteraction: false,
     },
     breakpoints: {
-        // عندما تكون الشاشة أكبر من 768px (ديسكتاب)
         768: {
-            slidesPerView: 3, // عرض 3 صور
+            slidesPerView: 3, 
             spaceBetween: 30,
         },
     },
@@ -80,18 +69,13 @@ var gallerySwiper = new Swiper(".myGallerySwiper", {
         dynamicBullets: true,
     },
 });
-// ميزة Scroll Spy لتحديد السكشن النشط
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".nav-links a, .drawer-content a");
-
 function scrollSpy() {
     let currentSectionId = "";
-
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        
-        // إذا كان السكرول الحالي قد تجاوز بداية السكشن بمسافة بسيطة
         if (window.pageYOffset >= sectionTop - 150) {
             currentSectionId = section.getAttribute("id");
         }
@@ -104,14 +88,8 @@ function scrollSpy() {
         }
     });
 }
-
-// تشغيل الدالة عند السكرول
 window.addEventListener("scroll", scrollSpy);
-
-// تشغيلها مرة واحدة عند تحميل الصفحة للتأكد من الحالة الابتدائية
 scrollSpy();
-
-// تحسين: إغلاق القائمة الجانبية عند الضغط على رابط (للموبايل)
 document.querySelectorAll('.drawer-content a').forEach(link => {
     link.addEventListener('click', () => {
         document.getElementById('sideDrawer').classList.remove('open');
