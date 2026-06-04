@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>شركة التسامح للسكراب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-recycle"></i>
+                <span>التسامح</span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من نحن</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#gallery">معرضنا</a>
+                <a href="#why-us">لماذا نحن</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+
+            <div class="nav-btns">
+                <a href="tel:0542778465" class="call-action-btn">إتصل الآن</a>
+                <button class="burger-menu" id="openMenu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="side-drawer" id="sideDrawer">
+        <button class="close-btn" id="closeMenu">&times;</button>
+        <div class="drawer-content">
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#gallery">معرض الأعمال</a>
+            <a href="#why-us">لماذا نحن</a>
+            <a href="#contact">تواصل معنا</a>
+        </div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <section id="home" class="hero">
+        <div class="hero-image-box">
+            <div class="hero-bg-zoom"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-content">
+            <span class="badge">الرائدون في عالم الخردة</span>
+            <h1 class="reveal-text">شركة التسامح لخدمات</h1>
+            <h2 class="reveal-text delay-1">السكراب والخردوات</h2>
+            <p class="reveal-text delay-2">
+                متخصصون في شراء سكراب الحديد، الألمنيوم، النحاس، والأبواب والدرائش بجميع أنواعها. نمنحك أفضل قيمة لسكرابك مع سرعة فائقة في التنفيذ.
+            </p>
+            <div class="hero-actions">
+                <a href="#services" class="btn-main">اكتشف خدماتنا</a>
+                <a href="#contact" class="btn-outline">تواصل معنا</a>
+            </div>
+        </div>
+    </section>
+    <!-- سكشن من نحن -->
+<section id="about" class="about">
+    <div class="container about-grid">
+        
+        <!-- الجزء الأيمن: الصورة مع برواز أنيميتد -->
+        <div class="about-img-box reveal-left">
+            <div class="img-wrapper">
+                <img src="images/about.jpg" alt="عن التسامح">
+                
+            </div>
+            <div class="shape-blob"></div>
+        </div>
+
+        <!-- الجزء الأيسر: الكلام -->
+        <div class="about-text-box reveal-right">
+            <div class="section-title">
+                <span class="upper">من نحن</span>
+                <h2>شركة التسامح.. الريادة في عالم الخردة والسكراب</h2>
+                <div class="line"></div>
+            </div>
+            
+            <p class="description">
+                نحن في **شركة التسامح** لا نتعامل مع الخردة كمجرد نفايات، بل كموارد قيمة نعيد ضخها في عجلة الاقتصاد. بفضل خبرتنا الطويلة في السوق السعودي، نعتبر الشريك الأول للأفراد والشركات في شراء جميع أنواع السكراب بأعلى الأسعار.
+            </p>
+
+            <!-- بطاقات المميزات الصغيرة -->
+            <div class="about-features">
+                <div class="feature-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h4>أفضل الأسعار</h4>
+                    <p>نضمن لك أعلى قيمة سوقية للنحاس والحديد.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck-loading"></i>
+                    <h4>سرعة التنفيذ</h4>
+                    <p>فريقنا يصلك أينما كنت مع أسطول نقل مجهز.</p>
+                </div>
+            </div>
+
+            <div class="about-footer-btn">
+                <a href="#contact" class="btn-more">تعرف علينا أكثر <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- سكشن خدماتنا -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="services-header reveal-down">
+            <span class="sub-title">ماذا نقدم؟</span>
+            <h2 class="main-title">خدماتنا الشاملة في عالم <span class="highlight">السكراب</span></h2>
+            <p class="section-desc">نحن في شركة التسامح نوفر حلولاً متكاملة لإعادة تدوير وبيع وشراء كافة أنواع الخردوات والمعادن بأعلى الأسعار التنافسية في السوق السعودي.</p>
+        </div>
+
+        <div class="services-grid">
+            
+            <!-- الخدمة 1: حديد -->
+            <div class="service-card reveal-up">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-industry"></i></div>
+                    <h3>سكراب الحديد</h3>
+                    <p>نشتري جميع أنواع سكراب الحديد الثقيل والخفيف، مخلفات المصانع، حديد التسليح، والهياكل المعدنية الضخمة مع خدمة التقطيع والنقل الفوري.</p>
+                    <ul class="keywords">
+                        <li>#شراء_حديد</li> <li>#خردة_مصانع</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الخدمة 2: نحاس -->
+            <div class="service-card reveal-up delay-1">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>النحاس والكابلات</h3>
+                    <p>أعلى سعر لشراء سكراب النحاس الأحمر والأصفر، الكابلات الكهربائية، مواسير النحاس، والمحولات الكهربائية القديمة بجميع أحجامها.</p>
+                    <ul class="keywords">
+                        <li>#سعر_النحاس</li> <li>#سكراب_كابلات</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الخدمة 3: المنيوم -->
+            <div class="service-card reveal-up delay-2">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-faucet"></i></div>
+                    <h3>الألمنيوم والدرائش</h3>
+                    <p>متخصصون في شراء سكراب الألمنيوم، درائش الألمنيوم، شبابيك، مطابخ ألمنيوم قديمة، وجميع الخردوات المعدنية المقاومة للصدأ.</p>
+                    <ul class="keywords">
+                        <li>#المنيوم_سكراب</li> <li>#درائش_قديمة</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الخدمة 4: أبواب حديد وخشب -->
+            <div class="service-card reveal-up">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-door-open"></i></div>
+                    <h3>الأبواب والشبابيك</h3>
+                    <p>نشتري الأبواب الحديدية الكبيرة، الأبواب الخشبية المستعملة، بوابات الفلل والقصور، مع توفير عمالة مختصة للفك والتحميل دون إزعاج.</p>
+                    <ul class="keywords">
+                        <li>#أبواب_مستعملة</li> <li>#خردة_أبواب</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الخدمة 5: مخلفات البناء -->
+            <div class="service-card reveal-up delay-1">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-tools"></i></div>
+                    <h3>مخلفات الهدم</h3>
+                    <p>خدمة متكاملة لرفع مخلفات الهدم المعدنية، السكراب الإنشائي، والتخلص الآمن من الخردوات في مواقع البناء والمشاريع الكبرى.</p>
+                    <ul class="keywords">
+                        <li>#سكراب_إنشائي</li> <li>#مخلفات_هدم</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الخدمة 6: جميع أنواع السكراب -->
+            <div class="service-card reveal-up delay-2">
+                <div class="card-inner">
+                    <div class="icon-box"><i class="fas fa-boxes"></i></div>
+                    <h3>خردوات متنوعة</h3>
+                    <p>نشتري كل ما هو "سكراب"! بطاريات، راديترات، مكيفات قديمة، أجهزة إلكترونية معطلة، وأي مواد معدنية ترغب في التخلص منها بمقابل مادي مجزي.</p>
+                    <ul class="keywords">
+                        <li>#تجارة_السكراب</li> <li>#أفضل_سعر</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- سكشن معرض الأعمال بنظام السلايدر المطور -->
+<section id="gallery" class="gallery-section">
+    <div class="container">
+        <div class="gallery-header reveal-down">
+            <span class="sub-title">دقة واحترافية</span>
+            <h2 class="main-title">معرض <span class="highlight">إنجازاتنا</span></h2>
+            <p>نستعرض لكم صوراً حية من مواقع العمل، حيث نشتري جميع أنواع السكراب والخردوات بأعلى الأسعار ونقوم بنقلها بأسلوب احترافي.</p>
+        </div>
+
+        <div class="slider-wrapper reveal-up">
+            <!-- السلايدر الرئيسي -->
+            <div class="swiper myGallerySwiper">
+                <div class="swiper-wrapper">
+                    <!-- الصورة 1 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.06 PM.jpeg" alt="سكراب حديد">
+                        </div>
+                    </div>
+                    <!-- الصورة 2 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.06 PM (1).jpeg" alt="نحاس وكابلات">
+                        </div>
+                    </div>
+                    <!-- الصورة 3 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.06 PM (2).jpeg" alt="خردوات المنيوم">
+                        </div>
+                    </div>
+                    <!-- الصورة 4 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.07 PM.jpeg" alt="أبواب قديمة">
+                        </div>
+                    </div>
+                    <!-- الصورة 5 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.07 PM (1).jpeg" alt="سكراب التسامح">
+                        </div>
+                    </div>
+                    <!-- الصورة 6 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.07 PM (2).jpeg" alt="خردة معادن">
+                        </div>
+                    </div>
+                    <!-- الصورة 7 -->
+                    <div class="swiper-slide">
+                        <div class="photo-card">
+                            <img src="images/WhatsApp Image 2026-06-04 at 8.34.07 PM (3).jpeg" alt="تحميل سكراب">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أزرار التحكم على الجنبين -->
+            <div class="nav-button prev-btn"><i class="fas fa-chevron-right"></i></div>
+            <div class="nav-button next-btn"><i class="fas fa-chevron-left"></i></div>
+
+            <!-- نقاط التنقل بالأسفل -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- سكشن لماذا نحن - التصميم الفاتح المبدع -->
+<section id="why-us" class="why-us-light">
+    <div class="container">
+        <div class="section-header-center reveal-down">
+            <span class="badge-light">سر تميزنا</span>
+            <h2 class="title-dark">لماذا يختار العملاء <span class="gold-text">شركة التسامح؟</span></h2>
+            <p class="desc-dark">نحن لا نشتري السكراب فقط، بل نبني جسوراً من الثقة مع عملائنا من خلال قيمنا الراسخة.</p>
+        </div>
+
+        <div class="features-grid">
+            
+            <!-- ميزة 1: المصداقية -->
+            <div class="feature-item reveal-up">
+                <div class="feature-inner">
+                    <div class="feature-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="feature-number">01</div>
+                    <h3>موازين دقيقة 100%</h3>
+                    <p>نستخدم أحدث أجهزة الوزن الإلكترونية المعتمدة لضمان حق العميل كاملاً دون نقصان، فالمصداقية هي رأس مالنا.</p>
+                </div>
+            </div>
+
+            <!-- ميزة 2: أفضل سعر -->
+            <div class="feature-item reveal-up delay-1">
+                <div class="feature-inner">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <div class="feature-number">02</div>
+                    <h3>أعلى سعر في السوق</h3>
+                    <p>نواكب أسعار البورصة العالمية والمعادن يومياً لنمنحك السعر الأفضل والأعلى لخردتك مهما كان نوعها أو كميتها.</p>
+                </div>
+            </div>
+
+            <!-- ميزة 3: سرعة الوصول -->
+            <div class="feature-item reveal-up delay-2">
+                <div class="feature-inner">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature-number">03</div>
+                    <h3>سرعة الاستجابة</h3>
+                    <p>بمجرد اتصالك، يتحرك فريقنا المجهز بأحدث الشاحنات ليصل إليك في أسرع وقت ممكن لنقل السكراب فوراً.</p>
+                </div>
+            </div>
+
+            <!-- ميزة 4: فريق محترف -->
+            <div class="feature-item reveal-up">
+                <div class="feature-inner">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="feature-number">04</div>
+                    <h3>عمالة مختصة</h3>
+                    <p>نمتلك فريق عمل مدرب على فك الأبواب والدرائش وهدم الهياكل المعدنية بمهارة وبدون إحداث أي فوضى في المكان.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- عناصر ديكورية متحركة في الخلفية -->
+    <div class="floating-blobs">
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+</section>
+<!-- سكشن تواصل معنا -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="section-header-center reveal-down">
+            <span class="badge-light">تواصل مباشر</span>
+            <h2 class="title-dark">نحن هنا <span class="gold-text">لخدمتكم</span></h2>
+            <p>لا تتردد في التواصل معنا للحصول على أفضل تقييم لسكرابك، نصلك في أي مكان.</p>
+        </div>
+
+        <div class="contact-cards">
+            <!-- كارد الاتصال -->
+            <a href="tel:0542778465" class="contact-card reveal-up">
+                <div class="c-icon icon-call"><i class="fas fa-phone-alt"></i></div>
+                <h3>إتصل بنا الآن</h3>
+                <p>054 277 8465</p>
+                <span class="c-btn">إتصال سريع</span>
+            </a>
+
+            <!-- كارد الواتساب -->
+            <a href="https://wa.me/966542778465" target="_blank" class="contact-card reveal-up delay-1">
+                <div class="c-icon icon-wa"><i class="fab fa-whatsapp"></i></div>
+                <h3>راسلنا واتساب</h3>
+                <p>رد فوري على استفساراتكم</p>
+                <span class="c-btn">بدء المحادثة</span>
+            </a>
+
+            <!-- كارد العنوان -->
+            <div class="contact-card reveal-up delay-2">
+                <div class="c-icon icon-loc"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>موقعنا</h3>
+                <p>المملكة العربية السعودية <br> <strong>شمال الرياض</strong></p>
+                <span class="c-btn">نصلك أينما كنت</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- الفوتر -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- العمود 1: اسم الشركة -->
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fas fa-recycle"></i>
+                    <span>التسامح</span>
+                </div>
+                <p class="f-desc">الشركة الرائدة في شراء السكراب والخردوات بجميع أنواعها في الرياض. نتميز بالدقة في الموازين والسرعة في التنفيذ وأفضل الأسعار.</p>
+                
+            </div>
+
+            <!-- العمود 2: روابط سريعة -->
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul class="f-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#gallery">معرض أعمالنا</a></li>
+                    <li><a href="#why-us">لماذا نحن</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود 3: خدماتنا -->
+            <div class="footer-col">
+                <h4>خدماتنا</h4>
+                <ul class="f-links">
+                    <li><a href="#services">شراء حديد سكراب</a></li>
+                    <li><a href="#services">سكراب نحاس وكابلات</a></li>
+                    <li><a href="#services">ألمنيوم ودرائش</a></li>
+                    <li><a href="#services">أبواب خشب وحديد</a></li>
+                    <li><a href="#services">مخلفات هدم وبناء</a></li>
+                </ul>
+            </div>
+
+            <!-- العمود 4: بيانات التواصل -->
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <ul class="f-contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> شمال الرياض، السعودية</li>
+                    <li><i class="fas fa-phone-alt"></i> 0542778465</li>
+                    <li><i class="fab fa-whatsapp"></i> واتساب متوفر 24/7</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 لشركة التسامح للسكراب</p>
+            <p class="gmt-credit">تصميم وبرمجة <a href="https://www.facebook.com/share/17UzqgSwiu/" target="_blank">GMTWeb</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- الأزرار العائمة -->
+<div class="floating-actions">
+    <a href="https://wa.me/966542778465" class="float-btn float-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>واتساب</span>
+    </a>
+    <a href="tel:0542778465" class="float-btn float-call">
+        <i class="fas fa-phone-alt"></i>
+        <span>إتصال</span>
+    </a>
+</div>
+
+<!-- إضافة مكتبة Swiper من الـ CDN إذا لم تكن موجودة -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
